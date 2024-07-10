@@ -1,1 +1,1 @@
-TaofiqFrontend-WebApp: React Blog Web App that shows the latest news and also link pages.
+TaofiqFrontend-WebApp: A simple React Web Home page.
