@@ -106,9 +106,9 @@ width: 100%;
   max-width: 500px;
 }
 .home-page {
-  background-color: green;
-  margin: 100px 20px;
-  color: white;
+  height: 100px;
+  
+  color: green;
 }
 .user-name {
   font-size: 30px;
