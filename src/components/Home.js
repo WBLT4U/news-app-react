@@ -69,7 +69,7 @@ function Blog() {
     }
   };
   return (
-    
+    <section> <div><marquee><h1>Welcome to Taofiq Abdulsalam News Management App </h1></marquee></div> </section>
     <section className="main-container">
       <section className="news">
     
