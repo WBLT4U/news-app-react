@@ -16,26 +16,31 @@ function Blog() {
         title: "All abducted Kogi varsity students will be rescued alive, govt vows",
         url: "https://www.vanguardngr.com/2024/05/all-abducted-kogi-varsity-students-will-be-rescued-alive-govt-vows/",
         description: "Latest news",
+        Date: "29/08/2024 | 10:00am",
       },
       {
         title: "Chad deploys soldiers across country after junta chief elected president",
         url: "https://www.vanguardngr.com/2024/05/chad-deploys-soldiers-across-country-after-junta-chief-elected-president/",
         description: "Latest news",
+        Date: "29/08/2024 | 9:00am",
       },
       {
         title: "Ondo varsity sacks Deputy VC over alleged false petition",
         url: "https://www.vanguardngr.com/2024/05/ondo-varsity-sacks-deputy-vc-over-alleged-false-petition/",
         description: "Latest news",
+        Date: "28/08/2024 | 11:30am",
       },
       {
         title: "Abducted FIJ reporter, Daniel Ojukwu regains freedom",
         url: "https://www.vanguardngr.com/2024/05/abducted-fij-reporter-daniel-ojukwu-regains-freedom/",
         description: "Latest news",
+        Date: "27/08/2024 | 10:00pm",
       },
       {
         title: "South Africa building collapse death toll rises to 12",
         url: "https://www.vanguardngr.com/2024/05/south-africa-building-collapse-death-toll-rises-to-12/",
         description: "Latest news",
+        Date: "25/08/2024 | 2:00pm",
       },
     ];
     const item = newsItems[currentPosition];
@@ -77,6 +82,7 @@ function Blog() {
           <div className="news-item">
             <h2>{news.title}</h2>
             <p>{news.description}</p>
+            <p>{news.Date}</p>
             <a href={news.url}>{news.url}</a>
           </div>
         )}
