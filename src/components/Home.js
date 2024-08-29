@@ -68,7 +68,6 @@ function Blog() {
       setCurrentPosition(0);
     }
   };
-  <section> <div><marquee><h1>Welcome to Taofiq Abdulsalam News Management App </h1></marquee></div> </section>
   return (
     <section className="main-container">
       <section className="news">
