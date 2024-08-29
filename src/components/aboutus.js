@@ -5,30 +5,15 @@ const AboutUs = () => {
       <h1>
         <p>
         ABOUT US <br></br>
-          WBLT Tech Limited is a company that provide exceptional Software
-          Development, Mobile App Development, CCTV Camera installation, Solar
-          Energy Installation, Networking and technology services, tailored to
-          meet your goals. WBLT TECH is a cutting-edge digital solutions
-          provider. We bring our clients' digital ideas to life by offering
-          premium Website & Mobile application development services, Digital
-          Marketing, Custom & Turn-key software creation, and IT implementation,
-          and support.
-        </p>
-      </h1>
-      <h1>
-        <p>
-          OUR MISSION <br></br>
-          Our mission is to be a leading integrated Information and
-          Communication Technology (ICT) solution company in Nigeria, making use
-          of technically-skilled, experienced and dedicated workforce with a
-          sound capital base channeled towards maintaining an excellent service
-          delivery culture, centered on robust customer satisfaction that helps
-          us generate good returns to the benefit of all stakeholders.
-          <br></br>
-          OUR VISION <br></br>
-          Our vision is to become the most revered one-stop shop integrated
-          Information Technology services organization in Nigeria with great
-          potential to dominate the West-African sub-region. We know
+          Hello! I’m a dedicated developer with a foundation in Computer Science from Kebbi State University of Science and Technology, and a rich background in PHP, Laravel, ReactJS, JavaScript, HTML5 and CSS. Since I began my journey in technology, I've designed and built custom web applications that not only meet the needs of users but improve their interactions and experiences.
+
+My recent project with Landmark Bridge of Success International School saw me develop sophisticated web applications to facilitate educational administration. I thrive in environments that challenge my skills, and this opportunity pushed me to streamline complex processes through code.
+
+I also played a pivotal role at Wisdom Pharmacy where I was instrumental in rolling out a web-based pharmaceutical inventory software. This platform now aids in the efficient management of medical stock, integrating user-friendly functionalities that cater to specific needs like antenatal and surgical packs.
+
+Whether building ecommerce platforms at WBLT Tech Limited or enhancing educational systems, I leverage my strong analytical skills to provide high-performance solutions. My goal? To make every interaction simpler, and every process smoother.
+
+I am always excited to connect with like-minded professionals and potential collaborators who are on a quest to make technological innovations. Let’s link up! 🚀
         </p>
       </h1>
     </section>
