@@ -106,8 +106,10 @@ width: 100%;
   max-width: 500px;
 }
 .home-page {
-  height: 100px;
-  
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  width: 100%;
   color: green;
 }
 .user-name {
