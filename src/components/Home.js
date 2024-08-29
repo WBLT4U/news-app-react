@@ -69,9 +69,10 @@ function Blog() {
     }
   };
   return (
-    <div><marquee><h1>Welcome to Taofiq Abdulsalam News Management App </h1></marquee></div>
+    
     <section className="main-container">
       <section className="news">
+    <div><marquee><h1>Welcome to Taofiq Abdulsalam News Management App </h1></marquee></div>
         {loading ? (
           <div>Loading</div>
         ) : (
