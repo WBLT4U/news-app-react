@@ -1,5 +1,5 @@
 import React, { useEffect, useState, } from "react";
-<marquee><h1>Welcome to Taofiq Abdulsalam News Management App </h1></marquee>
+
 //Create our root component =>  App component
 function Blog() {
   //Set up our state
@@ -69,6 +69,7 @@ function Blog() {
     }
   };
   return (
+    <div><marquee><h1>Welcome to Taofiq Abdulsalam News Management App </h1></marquee></div>
     <section className="main-container">
       <section className="news">
         {loading ? (
