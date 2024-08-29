@@ -111,6 +111,7 @@ width: 100%;
   padding: 50px 20px;
   width: 100%;
   line-height: 1.5;
+  text-align: justify;
   color: green;
 }
 .user-name {
