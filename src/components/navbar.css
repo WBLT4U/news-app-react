@@ -98,28 +98,21 @@
     }
   }
   
-  /* Tablet View */
+ /* Tablet View (Max width: 1024px) */
 @media screen and (max-width: 1024px) {
-  .navMenu {
-    gap: 40px;
-  }
-
-  .logo {
-    font-size: 25px;
+  .navbar {
+    padding: 8px 15px; /* Adjust padding for smaller screens */
+    gap: 30px; /* Reduce gap between items */
+    min-height: 60px; /* Adjust height */
   }
 }
 
-/* Small Mobile View */
-@media screen and (max-width: 480px) {
-  .navMenu {
-    gap: 20px;
-  }
-
-  .logo {
-    font-size: 20px;
-  }
-  
+/* Mobile View (Max width: 780px) */
+@media screen and (max-width: 780px) {
   .navbar {
-    padding: 5px 10px;
+    padding: 5px 10px; /* Further adjust padding for mobile */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 20px; /* Reduce gap further */
+    min-height: auto; /* Adjust height if needed */
   }
 }
