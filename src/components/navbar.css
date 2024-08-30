@@ -111,7 +111,7 @@
 @media screen and (max-width: 780px) {
   .navbar {
     padding: 5px 10px; /* Further adjust padding for mobile */
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: row; /* Stack items vertically on smaller screens */
     gap: 20px; /* Reduce gap further */
     min-height: auto; /* Adjust height if needed */
   }
