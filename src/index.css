@@ -98,39 +98,93 @@ button {
   max-width: 500px;
 }
 
-.navbar{
-  background-color: green;
-  padding: 3px;
+* Base Styles for Navbar and Navigation Menu */
+.navbar {
+  background-color: aliceblue;
+  padding: 10px 20px;
   display: flex;
-  justify-content: center;
-  gap: 100px;
-  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
 }
 
-.navbar a{
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navMenu li {
+  font-size: 18px;
+}
+
+.navMenu a {
   text-decoration: none;
-  color: white;
-  font-size: 1.3rem;
+  color: black;
+  padding: 10px 20px;
 }
 
-.navbar a:hover{
-  color: black;
+/* Media Query Adjustments */
+
+/* Tablet View (Max width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .navMenu {
+    gap: 30px; /* Reduce gap between links */
+  }
+
+  .navMenu li {
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* Mobile View (Max width: 780px) */
+@media screen and (max-width: 780px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: flex-start;
+  }
+
+  .navMenu {
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width for each link */
+    gap: 10px; /* Reduce gap between links */
+  }
+
+  .navMenu li {
+    width: 100%; /* Each link takes full width */
+    text-align: center;
+  }
+
+  .navMenu a {
+    display: block;
+    width: 100%; /* Ensure link covers full width */
+    padding: 15px; /* Increase padding for touch targets */
+  }
+}
+
+/* Small Mobile View (Max width: 480px) */
+@media screen and (max-width: 480px) {
+  .navMenu {
+    gap: 5px; /* Further reduce gap */
+  }
+
+  .navMenu li {
+    font-size: 14px; /* Adjust font size for small screens */
+  }
+
+  .navMenu a {
+    padding: 10px 15px; /* Adjust padding */
+  }
 }
 
 /* Medium Devices (Tablets, 768px and up) */
 @media (max-width: 768px) {
   .header h1 {
     font-size: 70px; /* Reduce header font size */
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 20px; /* Stack navigation links vertically */
-    height: auto; /* Adjust height */
-  }
-
-  .navbar a {
-    font-size: 1.1rem; /* Reduce font size */
   }
 
   .card {
