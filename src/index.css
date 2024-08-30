@@ -116,3 +116,80 @@ button {
 .navbar a:hover{
   color: black;
 }
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 70px; /* Reduce header font size */
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px; /* Stack navigation links vertically */
+    height: auto; /* Adjust height */
+  }
+
+  .navbar a {
+    font-size: 1.1rem; /* Reduce font size */
+  }
+
+  .card {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .action-btn {
+    padding: 12px 28px; /* Adjust padding */
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .form-container {
+    max-width: 90%; /* Reduce form container width */
+    padding: 20px;
+  }
+
+  .news {
+    padding: 40px 10px; /* Adjust padding */
+  }
+
+  .news-item {
+    padding: 15px; /* Adjust padding */
+    max-width: 100%; /* Allow news items to use full width */
+  }
+}
+
+/* Small Devices (Mobile Phones, 480px and up) */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 50px; /* Further reduce header font size */
+  }
+
+  .navbar {
+    gap: 10px; /* Reduce gap between navbar items */
+  }
+
+  .navbar a {
+    font-size: 1rem; /* Further reduce font size */
+  }
+
+  .card {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .action-btn {
+    padding: 10px 20px; /* Further adjust padding */
+    font-size: 12px; /* Further reduce font size */
+  }
+
+  .form-container {
+    max-width: 100%; /* Allow form container to use full width */
+    padding: 15px;
+  }
+
+  .news {
+    padding: 30px 5px; /* Further adjust padding */
+  }
+
+  .news-item {
+    padding: 10px; /* Further adjust padding */
+  }
+}

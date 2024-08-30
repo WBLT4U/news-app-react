@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+  .App-logo {
+    height: 30vmin; /* Reduce logo size */
+  }
+
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Reduce font size */
+    padding: 20px;
+  }
+
+  .App-link {
+    font-size: 16px; /* Adjust link font size */
+  }
+}
+
+/* For screens 480px and below */
+@media (max-width: 480px) {
+  .App-logo {
+    height: 20vmin; /* Further reduce logo size */
+  }
+
+  .App-header {
+    font-size: calc(6px + 2vmin); /* Further reduce font size */
+    padding: 15px;
+  }
+
+  .App-link {
+    font-size: 14px; /* Adjust link font size */
+  }
+}

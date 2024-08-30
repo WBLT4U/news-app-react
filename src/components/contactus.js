@@ -5,7 +5,7 @@ const ContactUs = () => {
            <h1>
         <p>
           CONTACT US <br></br>
-          Address: No. 12 Third Avenue Federal Housing Rumjin Sambo Sokoto-Nigeria
+          Tudun Fulani Ext. 35 Bwari FCT Abuja
           <br></br>
           Tel: +2348066713592, +2348157225633
           <br></br>

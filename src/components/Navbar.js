@@ -7,7 +7,7 @@ function Nav(){
             <Link to="/">Home</Link>
             <Link to="/aboutus">About Us</Link>
             <Link to="/contactus">Contact Us</Link>
-            <Link to="/pagination">Blog</Link>
+            <Link to="/pagination">News</Link>
           </nav>
         </>
     );

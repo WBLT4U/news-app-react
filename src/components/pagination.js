@@ -16,26 +16,31 @@ function Blog() {
         title: "All abducted Kogi varsity students will be rescued alive, govt vows",
         url: "https://www.vanguardngr.com/2024/05/all-abducted-kogi-varsity-students-will-be-rescued-alive-govt-vows/",
         description: "Latest news",
+        Date: "29/08/2024 | 10:00am",
       },
       {
-        title: "Chad deploys soldiers across country after junta chief elected president",
-        url: "https://www.vanguardngr.com/2024/05/chad-deploys-soldiers-across-country-after-junta-chief-elected-president/",
+        title: "Tinubu okays 50% electricity subsidy for hospitals, others",
+        url: "https://punchng.com/tinubu-okays-50-electricity-subsidy-for-hospitals-others/",
         description: "Latest news",
+        Date: "30/08/2024 | 9:00am",
       },
       {
-        title: "Ondo varsity sacks Deputy VC over alleged false petition",
-        url: "https://www.vanguardngr.com/2024/05/ondo-varsity-sacks-deputy-vc-over-alleged-false-petition/",
+        title: "Al Ahli agree €80m fee for Osimhen, player to sign £646,000-a-week deal",
+        url: "https://dailypost.ng/2024/08/30/al-ahli-agree-e80m-fee-for-osimhen-player-to-sign-646000-a-week-deal/",
         description: "Latest news",
+        Date: "30/08/2024 | 11:00am",
       },
       {
-        title: "Abducted FIJ reporter, Daniel Ojukwu regains freedom",
-        url: "https://www.vanguardngr.com/2024/05/abducted-fij-reporter-daniel-ojukwu-regains-freedom/",
+        title: "DSS gets court order to freeze 20 bank accounts of female suspected terrorist",
+        url: "https://dailypost.ng/2024/08/30/dss-gets-court-order-to-freeze-20-bank-accounts-of-female-suspected-terrorist/",
         description: "Latest news",
+        Date: "30/08/2024 | 11:30am",
       },
       {
-        title: "South Africa building collapse death toll rises to 12",
-        url: "https://www.vanguardngr.com/2024/05/south-africa-building-collapse-death-toll-rises-to-12/",
+        title: "Serve Nigeria with unreserved loyalty, Benue gov urges corps members",
+        url: "https://punchng.com/serve-nigeria-with-unreserved-loyalty-benue-gov-urges-corps-members/",
         description: "Latest news",
+        Date: "30/08/2024 | 12:00pm",
       },
     ];
     const item = newsItems[currentPosition];
@@ -77,6 +82,7 @@ function Blog() {
           <div className="news-item">
             <h2>{news.title}</h2>
             <p>{news.description}</p>
+            <p>{news.Date}</p>
             <a href={news.url}>{news.url}</a>
           </div>
         )}
