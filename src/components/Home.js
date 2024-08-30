@@ -98,8 +98,4 @@ function Blog() {
     </section>
   );
 }
-<<<<<<< HEAD
 export default Blog;
-=======
-export default Blog;
->>>>>>> f60a4f4d32255aa0569807ce23e822d130b4075e
