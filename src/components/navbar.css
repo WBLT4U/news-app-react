@@ -33,7 +33,7 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  .navMenu {
+  .navbar {
     display: flex; /* Ensure the links are laid out horizontally */
     justify-content: space-between;
     align-items: center;
@@ -43,14 +43,14 @@
 
 /* For Tablet View (Max width: 1024px) */
 @media screen and (max-width: 1024px) {
-  .navMenu {
+  .navbar {
     gap: 15px; /* Adjust gap for smaller screens */
   }
 }
 
 /* For Mobile View (Max width: 780px) */
 @media screen and (max-width: 780px) {
-  .navMenu {
+  .navbar {
     flex-direction: row; /* Ensure links remain horizontal */
     gap: 10px; /* Further adjust gap */
   }
@@ -58,42 +58,13 @@
 
 /* For Small Mobile View (Max width: 480px) */
 @media screen and (max-width: 480px) {
-  .navMenu {
+  .navbar {
     flex-direction: row; /* Ensure links remain horizontal */
     gap: 5px; /* Minimal gap for very small screens */
   }
 }
   
-  /* media queries */
   
-  @media screen and (max-width: 780px){
-    
-    /* hamburger */
-    .hamburger {
-      display: block;
-      cursor: pointer;
-    }
-  
-    .bar {
-          background-color: #120f0b;
-          width: 20px;
-          height: 3px;
-          display: block;
-          margin: 5px;
-          -webkit-transition: 0.3s ease-in-out;
-          transition: 0.3s ease-in-out;
-      }
-  
-    /* adding active class to the bars  */
-    .hamburger.active .bar:nth-child(2){
-      opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-    }
   
   
     /* navMenu */
@@ -118,6 +89,6 @@
     .navMenu li {
       margin: 16px 0;
     }
-  }
+  
   
  
