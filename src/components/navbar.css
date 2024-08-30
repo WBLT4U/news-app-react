@@ -98,75 +98,28 @@
     }
   }
   
-  /* media queries */
-@media screen and (max-width: 780px) {
-    
-  /* hamburger */
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .bar {
-      background-color: #120f0b;
-      width: 20px;
-      height: 3px;
-      display: block;
-      margin: 5px;
-      transition: 0.3s ease-in-out;
-  }
-
-  /* adding active class to the bars  */
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  /* navMenu */
+  /* Tablet View */
+@media screen and (max-width: 1024px) {
   .navMenu {
-    position: absolute;
-    flex-direction: column;
-    gap: 0;
-    top: 70px;
-    left: -100%;
-    text-align: start;
-    width: 100%;
-    transition: 0.7s ease-in-out;
-    background-color: aliceblue;
-    padding: 10px;
-  }
-
-  .navMenu.active {
-    left: 0;
-  }
-
-  .navMenu li {
-    margin: 16px 0;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* Adjustments for very small screens */
-  .navbar {
-      padding: 5px 10px;
-      gap: 20px;
-      min-height: 60px;
+    gap: 40px;
   }
 
   .logo {
-      font-size: 24px;
+    font-size: 25px;
   }
+}
 
+/* Small Mobile View */
+@media screen and (max-width: 480px) {
   .navMenu {
-      gap: 30px;
+    gap: 20px;
   }
 
-  a {
-      font-size: 16px;
+  .logo {
+    font-size: 20px;
+  }
+  
+  .navbar {
+    padding: 5px 10px;
   }
 }
