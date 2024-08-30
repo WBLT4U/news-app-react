@@ -33,38 +33,45 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  .navbar {
-    display: flex; /* Ensure the links are laid out horizontally */
+  
+  /* ul  */
+  .navMenu {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px; /* Adjust gap between links */
+    gap: 60px;
   }
-  /* Media Query Adjustments */
-
-/* For Tablet View (Max width: 1024px) */
-@media screen and (max-width: 1024px) {
-  .navbar {
-    gap: 15px; /* Adjust gap for smaller screens */
-  }
-}
-
-/* For Mobile View (Max width: 780px) */
-@media screen and (max-width: 780px) {
-  .navbar {
-    flex-direction: row; /* Ensure links remain horizontal */
-    gap: 10px; /* Further adjust gap */
-  }
-}
-
-/* For Small Mobile View (Max width: 480px) */
-@media screen and (max-width: 480px) {
-  .navbar {
-    flex-direction: row; /* Ensure links remain horizontal */
-    gap: 5px; /* Minimal gap for very small screens */
-  }
-}
   
+  /* media queries */
   
+  @media screen and (max-width: 780px){
+    
+    /* hamburger */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .bar {
+          background-color: #120f0b;
+          width: 20px;
+          height: 3px;
+          display: block;
+          margin: 5px;
+          -webkit-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+      }
+  
+    /* adding active class to the bars  */
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
   
   
     /* navMenu */
@@ -89,6 +96,23 @@
     .navMenu li {
       margin: 16px 0;
     }
+  }
   
-  
- 
+ /* Tablet View (Max width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 8px 15px; /* Adjust padding for smaller screens */
+    gap: 30px; /* Reduce gap between items */
+    min-height: 60px; /* Adjust height */
+  }
+}
+
+/* Mobile View (Max width: 780px) */
+@media screen and (max-width: 780px) {
+  .navbar {
+    padding: 5px 10px; /* Further adjust padding for mobile */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 20px; /* Reduce gap further */
+    min-height: auto; /* Adjust height if needed */
+  }
+}
