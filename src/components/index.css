@@ -106,9 +106,13 @@ width: 100%;
   max-width: 500px;
 }
 .home-page {
-  background-color: green;
-  margin: 100px 20px;
-  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  width: 100%;
+  line-height: 1.5;
+  text-align: justify;
+  color: green;
 }
 .user-name {
   font-size: 30px;

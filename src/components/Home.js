@@ -13,10 +13,10 @@ function Blog() {
     //List News Items
     const newsItems = [
       {
-        title: "All abducted Kogi varsity students will be rescued alive, govt vows",
-        url: "https://www.vanguardngr.com/2024/05/all-abducted-kogi-varsity-students-will-be-rescued-alive-govt-vows/",
+        title: "Al Ahli agree €80m fee for Osimhen, player to sign £646,000-a-week deal",
+        url: "https://dailypost.ng/2024/08/30/al-ahli-agree-e80m-fee-for-osimhen-player-to-sign-646000-a-week-deal/",
         description: "Latest news",
-        Date: "29/08/2024 | 10:00am",
+        Date: "30/08/2024 | 11:00am",
       },
       {
         title: "Tinubu okays 50% electricity subsidy for hospitals, others",
@@ -25,10 +25,10 @@ function Blog() {
         Date: "30/08/2024 | 9:00am",
       },
       {
-        title: "Al Ahli agree €80m fee for Osimhen, player to sign £646,000-a-week deal",
-        url: "https://dailypost.ng/2024/08/30/al-ahli-agree-e80m-fee-for-osimhen-player-to-sign-646000-a-week-deal/",
+        title: "Edun commends military’s role in economic recovery",
+        url: "https://thenationonlineng.net/edun-commends-militarys-role-in-economic-recovery/",
         description: "Latest news",
-        Date: "30/08/2024 | 11:00am",
+        Date: "29/08/2024 | 10:00am",
       },
       {
         title: "DSS gets court order to freeze 20 bank accounts of female suspected terrorist",
@@ -98,4 +98,8 @@ function Blog() {
     </section>
   );
 }
+<<<<<<< HEAD
 export default Blog;
+=======
+export default Blog;
+>>>>>>> f60a4f4d32255aa0569807ce23e822d130b4075e
