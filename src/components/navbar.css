@@ -1,58 +1,72 @@
-/* navbar */
-#responsive-nav {
-  background-color: aliceblue;
-  padding: 10px 20px;
+/* src/components/Navbar.css */
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
-  min-height: 70px;
+  background-color: #333;
+  padding: 10px 20px;
 }
 
-/*----------------------------*\
-	responsive nav
-\*----------------------------*/
+.logo {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
-@media only screen and (max-width: 991px) {
-  .header-ctn .menu-toggle {
-    display: inline-block;
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.mobile-menu-icon {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+/* Responsive styling for mobile devices */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
   }
-  #responsive-nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: green;
-    height: 100vh;
-    max-width: 250px;
-    width: 0%;
-    overflow: hidden;
-    z-index: 22;
-    padding-top: 60px;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -webkit-transition: 0.2s all;
-    transition: 0.2s all;
-  }
-  #responsive-nav.active {
-    -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    transform: translateX(0%);
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #333;
     width: 100%;
+    height: calc(100vh - 70px);
+    align-items: center;
+    justify-content: center;
   }
-  .main-nav {
-    margin: 0px;
-    float: none;
+
+  .nav-links-mobile li {
+    margin: 15px 0;
   }
-  .main-nav>li {
+
+  .mobile-menu-icon {
     display: block;
-    float: none;
-  }
-  .main-nav>li+li {
-    margin-left: 0px;
-  }
-  .main-nav>li>a {
-    padding: 15px;
-    color: #FFF;
   }
 }

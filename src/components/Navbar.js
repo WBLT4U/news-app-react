@@ -1,33 +1,28 @@
+// src/components/Navbar.js
+
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './navbar.css'; // Ensure you have a CSS file for styles
+import './navbar.css'; // We'll create this CSS file next
 
-function Nav() {
-    const [isActive, setIsActive] = useState(false);
+const Nav = () => {
+  const [isMobile, setIsMobile] = useState(false);
 
-    const toggleMenu = () => {
-        setIsActive(!isActive);
-    };
-
-    return (
-        <nav id="navigation">
-            <div className="container">
-                <div className="header-ctn">
-                    <div className="menu-toggle" onClick={toggleMenu}>
-                        <i className="fa fa-bars"></i> {/* Add an icon or text for the toggle */}
-                    </div>
-                </div>
-                <div id="responsive-nav" className={isActive ? 'active' : ''}>
-                    <ul className="main-nav nav navbar-nav">
-                        <li className="active"><Link to="/">Home</Link></li>
-                        <li><Link to="/aboutus">About Us</Link></li>
-                        <li><Link to="/contactus">Contact Us</Link></li>
-                        <li><Link to="/pagination">News</Link></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    );
-}
+  return (
+    <nav className="navbar">
+      <h3 className="logo">MyWebsite</h3>
+      <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
+          onClick={() => setIsMobile(false)}>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <button className="mobile-menu-icon"
+              onClick={() => setIsMobile(!isMobile)}>
+        {isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
+      </button>
+    </nav>
+  );
+};
 
 export default Nav;
