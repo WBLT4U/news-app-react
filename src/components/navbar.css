@@ -1,55 +1,47 @@
-/* Basic styling for the navbar */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: green;
-}
+/*----------------------------*\
+	responsive nav
+\*----------------------------*/
 
-.navMenu {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.navMenu li a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Hide the menu on smaller screens */
-.menu-icon {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .menu-icon {
-      display: block;
+@media only screen and (max-width: 991px) {
+  .header-ctn .menu-toggle {
+    display: inline-block;
   }
-
-  .navMenu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #fff;
-      position: absolute;
-      top: 60px; /* Adjust based on your navbar height */
-      left: 0;
+  #responsive-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: green;
+    height: 100vh;
+    max-width: 250px;
+    width: 0%;
+    overflow: hidden;
+    z-index: 22;
+    padding-top: 60px;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
   }
-
-  .navMenu.showMenu {
-      display: flex;
+  #responsive-nav.active {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    width: 100%;
   }
-
-  .navMenu li {
-      width: 100%;
-      text-align: center;
-      padding: 1rem 0;
+  .main-nav {
+    margin: 0px;
+    float: none;
+  }
+  .main-nav>li {
+    display: block;
+    float: none;
+  }
+  .main-nav>li+li {
+    margin-left: 0px;
+  }
+  .main-nav>li>a {
+    padding: 15px;
+    color: #FFF;
   }
 }
