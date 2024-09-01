@@ -1,7 +1,7 @@
 // src/components/Navbar.js
 
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './navbar.css'; // We'll create this CSS file next
 
 import { CodeIcon, HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
