@@ -15,7 +15,7 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            <span>Taofiq News React App</span>
+            <span> News App</span>
             {/* <i className="fas fa-code"></i> */}
             
           </NavLink>
