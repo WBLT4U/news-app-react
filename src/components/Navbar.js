@@ -8,7 +8,7 @@ const Nav = () => {
 
   return (
     <nav className="navbar">
-      <h3 className="logo">MyWebsite</h3>
+      <h3 className="logo">Taofiq News App </h3>
       <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
           onClick={() => setIsMobile(false)}>
         <li><a href="#home">Home</a></li>
