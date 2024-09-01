@@ -11,11 +11,10 @@ const Nav = () => {
       <h3 className="logo">Taofiq News App </h3>
       <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
           onClick={() => setIsMobile(false)}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/aboutus">About Us</Link></li>
+        <li><Link to="/contactus">Contact Us</Link></li>
+        <li><Link to="/pagination">News</Link></li>
       </ul>
       <button className="mobile-menu-icon"
               onClick={() => setIsMobile(!isMobile)}>
